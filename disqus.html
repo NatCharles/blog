@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jane Trimmer | Drupal notes on Disqus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Some notes on using the Disqus commenting platform for your Drupal project">
+    <meta name="author" content="Jane Trimmer">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><i class="icon-home"></i> Jane Trimmer</a>
+          <div class="nav-collapse collapse">        
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li class="active"><a href="blog">Blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>Using the Disqus commenting platform for your Drupal site</h1>
+		  <p class="text-info"><small>26 March 2013</small></p>
+		  <p>You may decide to use the <a href="http://disqus.com/">Disqus</a> service for comments on your Drupal site as an alternative to Drupal's built-in comments. There is a good article about why you might do so <a href="http://friendlymachine.net/posts/drupal-comments-look-options">here</a>.
+		  </p>	  
+		  <p>If you are starting from scratch for a given Content type, the Drupal settings are straightforward and described on the Disqus project page (link above). If you decide to change commenting from Drupal to Disqus, things are slightly different. You need to change Comment settings for your Content type from <em>Open</em> to <em>Closed</em>. However, nodes that you created <em>before</em> implementing Disqus will still have comments Open. To ensure that new comments on these nodes are set to Disqus, disable <strong>Post comments</strong> under <em>admin/people/permissions</em>.
+		  </p>
+		  <p>There are two ways of dealing with Drupal comments on nodes that are now set to Disqus:
+		  </p>
+		  <ul>
+			<li>You can leave them as they are. Under admin/people/permissions, enable <strong>View comments</strong> to allow users to view Drupal comments. These will appear under Disqus comments, a bit confusing but less work for the site administrator.
+			</li>
+			<li>You can migrate the comments to Disqus. There is no module in Drupal 7 to do this, but here is a <a href="http://fuseinteractive.ca/blog/migrating-comments-drupal-7-disqus">post</a> that tells you how to do it. For a small site, you might even consider transferring the comments manually.
+			</li>			
+		  </ul>
+		  <h2>More on Disqus
+		  </h2>
+		  <p>If you delete anonymous comments, they show up under <em>All</em> on your Disqus Admin page, rather than under <em>Delete</em>, which is a bit confusing.
+		  </p>
+		  <p>The default setting for your Disqus comments includes Around the Web Links. To change this, go to Admin -> Settings -> Discovery and change your setting from <em>Maximum increased traffic and revenue</em> to <em>Increased traffic</em>. There's a really good <a href="http://www.youtube.com/watch?v=bALTJqNGZZs">video</a> that explains exactly what to do.
+		  </p>
+		       
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+       <footer>
+        <p>&copy; Jane Trimmer 2013 	
+		  <i class="icon-twitter icon-large"></i> <a target="_blank" onclick="followpop(); return false;" href="https://twitter.com/janetrimmer">Follow Me!</a> <i class="icon-envelope icon-large"></i> <a href="mailto:jane@janetrimmer.co.uk">Email me!</a>
+		</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+  </body>
+</html>

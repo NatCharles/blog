@@ -1,0 +1,6 @@
+# This redirects any-filename.html to any-filename
+# Thanks to Binh Nguyen for this code http://eisabainyo.net/weblog/2007/08/19/removing-file-extension-via-htaccess/
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html

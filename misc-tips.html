@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jane Trimmer | Miscellaneous tips</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How I built this site using Bootstrap">
+    <meta name="author" content="Jane Trimmer">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><i class="icon-home"></i> Jane Trimmer</a>
+          <div class="nav-collapse collapse">        
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li class="active"><a href="blog">Blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>Miscellaneous tips</h1>	  
+		  <p class="text-info"><small>21 March 2013</small></p>
+		  <p>Here, I'll add tips on anything and everything web-related for Windows users. (I don't have a Mac and although I can and do use Linux, I find it a bit scary). I don't have a comments system in place, that'll come later, so if you have any comments, please email me. Any comments of your I publish, will of course be attributed to you.
+		  </p>
+		  <h2>TarTool
+		  </h2>
+		  <p>Every now and then you will download a 'zipped' file. You will need to 'unzip' it in order to extract the individual folders and files compressed within it. If this file has the suffix .zip, you can right-click on the file name, then select <strong>Extract All&hellip;</strong> and follow the prompts.
+		  </p>
+		  <p>
+		  If, however, the file has the suffix .tar.gz, you'll need a program or tool to unzip it in Windows. There are downloadable programs you can purchase, but I found this neat little free tool <a href="http://tartool.codeplex.com/"></a>. This is how you use it:
+		  </p>
+		  <ul>
+		    <li>Download the zipped file TarTool.zip from the link above into your Downloads folder. Unzip it by right-clicking on the the file name and selecting <strong>Extract All&hellip;</strong>. Using the default options will give you 2 files - ICSharpCode.SharpZipLib.dll and TarTool.exe in the folder TarTool.
+			</li>
+			<li>Now this is an important step - <em>copy these two files into the folder that contains your tar.gz file</em>. 
+			</li>		
+			<li>Go up one level to the containing folder. Press shift and right-click, then select <strong>Open command window here</strong>. This generates a little black popup window. At the blinking cursor, enter TarTool.exe to view the options.
+			</li>
+			<li>Enter <strong>TarTool yourFilename.tar.gz temp</strong>, where yourFilename is the name of the your zipped file and temp is the name of the folder you wish to contain the extracted files. Try it!
+			</li>
+		  </ul>
+		  <p>Note: An easy way to paste a filename into the command window is to first copy it in the usual way. Then when you are in the command window, right-click at the point you want to paste the filename and select paste.
+		  </p>
+		  
+		  <h2>Emmet
+		  </h2>
+		  <p>I'm a great fan of Open Source software. I already use <a href="http://notepad-plus-plus.org/">Notepad++</a>as a text editor. Although not the most sophisticated or comprehensive, it is sufficient for my needs. Via my Twitter feed, I discovered <a href=" http://emmet.io/">Emmet</a>, 'the essential toolkit for web-developers'. I didn't realise that this is a plugin already embedded in Notepad++. Just go to Plugins/Emmet and it's right there. There are all sorts of options to help speed up your editing. For comprehensive and easy-to-follow documentation, go to <a href="http://docs.emmet.io/">this</a> page. Here is an Emmet <a href="http://docs.emmet.io/cheat-sheet/">cheat sheet</a>.
+		  </p>
+		  <p>My favourite commands are:
+		   </p>
+		    <ul>
+			  <li><strong>Expand Abbreviation</strong> (keyboard shortcut Ctrl+Alt+Enter). Entering 'em' for example, will generate the code &lt;em&gt;&lt;/em&gt;.
+			  </li>
+			  <li>To highlight a block of text between a pair of matching tags, click somewhere inside the block, then select <strong>Match pair inward</strong>. To include the tags as well, click within one of the tags, then select <strong>Match pair inwards</strong>.Having highlighted your text, you can either move or delete it.
+			  </li>
+			</ul>
+		 
+		 <h2>IRC (Internet Relay Chat)</h2>
+		 <p>There's an excellent video <a href="http://drupalize.me/videos/using-irc-internet-relay-chat">here</a> that describes what IRC is, why it might be useful to you and how to get set up. Here are two methods:
+		 </p>
+		 <h3>Webchat
+		 </h3>
+		 <p><a href="http://webchat.freenode.net/">Webchat</a> is a popular web-based IRC client , based on the <a href="http://freenode.net/">freenode</a> network. You don't need to download any software. First, you will need to decide what channel you want. <a href="http://searchirc.com/">This</a> page has a comprehensive list. You might want to narrow your search by googling 'irc whatever'. Here is a list of <a href="http://drupal.org/irc">Drupal</a> IRC channels. Next, choose a nickname. You can <a href="http://freenode.net/faq.shtml#nicksetup">register</a> this nickname if you want to. Then click on the <a href="http://webchat.freenode.net/">Webchat.freenode.net</a>, enter your nickname and the captcha. You will then be taken to the webchat window.
+		 </p>
+		 <p>Your cursor will be focused at a text field at the bottom of the window. This is where you enter your chat. 
+		 </p>
+		 <h4>Webchat commands
+		 </h4>
+		 <p>Here are some links to webchat commands - <a href="http://www.ircbeginner.com/ircinfo/ircc-commands.html">Basic IRC Commands</a> and <a href="http://drupal.org/node/1259614">Common IRC Commands</a>. What these sites <em>don't</em> tell you is that you enter these commands in this same text field. Commands start with the character '/'. For example, '/msg NickServ INFO nick' (where nick is your nickname) will give you information about this nick.
+		  </p>
+		  <h3>ChatZilla
+		  </h3>
+		  <p><a href="https://addons.mozilla.org/en-US/firefox/addon/chatzilla/">ChatZilla</a> is a Firefox addon, which is a bit more user-friendly. It lets you search for both IRC networks (eg. Freenode) and channels within that network. The commands, however, are the same as for Webchat.
+		  </p>	 
+		 
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+       <footer>
+        <p>&copy; Jane Trimmer 2013 	
+		  <i class="icon-twitter icon-large"></i> <a target="_blank" onclick="followpop(); return false;" href="https://twitter.com/janetrimmer">Follow Me!</a> <i class="icon-envelope icon-large"></i> <a href="mailto:jane@janetrimmer.co.uk">Email me!</a>
+		</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+  </body>
+</html>

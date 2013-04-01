@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jane Trimmer | How I built this site using Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How I built this site using Bootstrap">
+    <meta name="author" content="Jane Trimmer">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><i class="icon-home"></i> Jane Trimmer</a>
+          <div class="nav-collapse collapse">        
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li class="active"><a href="blog">Blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>How I built this site using Bootstrap</h1>
+		  <p class="text-info"><small>12 February 2013</small></p>
+		  <p>My original blog was built in <a href="http://drupal.org/" title="Drupal homepage">Drupal</a>, a widely-used CMS, mainly because Drupal is what I'm most familiar with. However, the platform is a bit of an over-kill for a simple website. I'd heard a lot of good things about <a href="http://twitter.github.com/bootstrap/index.html" title="Bootstrap homepage">Bootstrap</a>, built by the people who created Twitter.
+		  </p>
+		  <p>This is how I went about it:</p>
+		  <ol>
+		    <li>Create a folder structure with /css and /js subfolders. This is your working folder.
+			</li>
+			<li>Download and unzip Bootstrap source from <a href="http://twitter.github.com/bootstrap/getting-started.html#download-bootstrap" title="Bootstrap source">this</a> page. It's the <em>second</em> button. This will contain several folders and sub-folders, including docs/assets/css and docs/assets/js.
+			</li>
+			<li>My site is based on the Fluid layout on <a href="http://twitter.github.com/bootstrap/getting-started.html#examples" title="Bootstrap examples">this</a> page, so copy docs/examples/fluid.html from your unzipped folder to your working folder. Rename it index.html. 
+			</li>
+			<li>Copy all the .js files from docs/assets/js to /js in your working folder. Copy bootstrap.css to /css in your working folder.
+			</li>
+			<li>Now fix the paths to the /css and /js folders and check that you page looks like the Fluid layout on the Bootstrap examples page.
+			</li>
+			<li>Now start customising your page. I didn't want a login box at the right of the nav bar, or a lefthand column, so I removed these, replacing 'span9' with 'span12' in the code. I also added some css at the top of some pages, to customise them a bit more.
+			</li>
+			<li>Add Twitter and email icons using <a href="http://fortawesome.github.com/Font-Awesome/" title="FontAwsome">FontAwsome</a> icons. These are highly customisable.
+			</li>
+		  </ol>
+		  <p>You now have a working blog. This is the point where you can <a href="http://twitter.github.com/bootstrap/customize.html" title="Bootstrap customize">customise</a> it. There are two stages to this - one is to select only those components that you need, the other is to alter the colours to your liking. It doesn't really matter if you select more items than you need, it just makes the css and js files larger, which will slow down your site a bit. Make a note of the settings, especially the colours, in case you need to alter these. If you think you'll add more functionality to your site later, such as an image gallery, add the required components now.
+		  </p>
+		  <ul class="unstyled">
+			<li>1. Choose components:
+			  <ul class="unstyled">
+				<li><strong>Scaffolding</strong><span class="right">Select all the items</span></li>
+				<li><strong>Components</strong><span class="right">Select Navs, Navbar, Media component</span></li>
+				<li><strong>Miscellaneous</strong><span class="right">None</span></li>
+				<li><strong>Base CSS</strong><span class="right">Headings, Code, Buttons and Icons</span></li>
+				<li><strong>Responsive</strong><span class="right">All the items</span></li>
+				<li><strong>JS Components</strong><span class="right">Collapse and Carousel</span></li>
+				<li><strong></strong></li>
+			  </ul>	
+			</li>
+		  
+			<li>2. Select jQuery plugins:
+			  <ul class="unstyled">
+				<li>Collapse and Carousel.</li>			
+			  </ul>
+			</li>
+		 
+			<li>3. Customize variables:
+			  <ul class="unstyled">
+				<li>@purple<span class="right">#5d3d42</span></li>
+				<li>@pink<span class="right">#d3a3a2</span></li>
+				<li>@textColor<span class="right">@purple</span></li>
+				<li>@navbarBackground<span class="right">@purple</span></li>
+				<li>@navbarBackgroundHighlight<span class="right">lighten(@navbarBackground, 10)</span></li>
+				<li>@navbarBrandColor<span class="right">@white</span></li>
+				<li>@navbarLinkColor<span class="right">@pink</span></li>
+				<li>@navbarLinkColorHover<span class="right">@white</span></li>
+				<li>@navbarLinkColorActive<span class="right">@white</span></li>
+			  </ul>
+			</li>
+		  </ul>
+		 
+		  <p>I needed to make a minor change to css/bootstrap-responsive.css. On line 1007 or thereabouts, background-color: #f2f2f2; was replaced by background-color: #ab8483; The minified version of the file is only 5K smaller than the unminified version, so I did not bother to minify it again.
+		  </p>
+		  <p><i>Note:</i>If you are using the Chrome browser and have the Hootlet extension installed, you will see any words preceded by '@' and any numbers preceded by '#' as links. To fix this, right-click the Hootlet icon, select Options and toggle <strong>Link Twitter status and user profile handles into the HootSuite dashboard</strong> to <i>Off</i>. Thank you <a href="http://pagehalffull.wordpress.com/2012/11/28/how-the-hootsuite-hootlet-broke-my-browser-kindof/">Page 1/2 Full</a> for posting this workaround.
+		  </p>
+		  <p>All my customised css was put into one file - css/blog.css.
+		  </p>
+		  <p>I added a .htaccess file to enable friendly urls, ie. about.html is the same as about.
+		  </p>
+		  <p>Finally, I checked the HTML in each page. The easiest way to do this is via the Web Developer toolbar/Tools in the Chrome browser. Checking the CSS throws up a lot of errors in bootstrap.css. This is due to the way the w3c validator works. These errors, according to esteemed sources, can be ignored. <i>Note: add 508 check when url points to this</i>
+		  </p>
+		  <h2>Bootstrap Pros</h2>
+		  <ul>
+		    <li>Very easy to set up. If you want to use it straight out of the box, you don't need much technical knowledge beyond basic HTML and CSS.
+			</li>
+			<li>No server-side coding is involved. It runs directly in the browser, so you don't need to set up a local server for testing.
+			</li>
+			<li>There are tools for <a href="http://twitter.github.com/bootstrap/customize.html" title="Bootstrap customisation">customisation</a>. You'd need to experiment with these to get the effects you want. 
+			</li>
+			<li>
+			</li>
+		  </ul>
+		 
+		  <h2>Bootstrap Cons</h2>
+		  <ul>
+		    <li>Out of the box, there are limited options.
+			</li>
+			<li>It's a bit fiddly to customize.
+			</li>
+		  </ul>
+		 
+		  <h2>Conclusion</h2>
+		  <p>For me personally, I'd use components of Bootstrap in other projects. For example, the Forms plugin, with it's built-in validation looks really nice.
+		  </p>
+		  <h2>Resources</h2>
+		  <ul>
+		    <li>Here's an article about setting up a website using Bootstrap, which is probably better written than the stuff above. <a href="http://www.webdesign.org/web-design-basics/design-principles/how-to-use-twitter-bootstrap-to-create-a-responsive-website-design.22139.html">How to use Twitter Bootstrap to Create a Responsive Website Design</a>.
+		    </li>
+			<li>A showcase of sites built with Bootstrap <a href=" http://builtwithbootstrap.com/">Built with Bootstrap</a>.
+			</li>
+		  </ul>  
+         
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+       <footer>
+        <p>&copy; Jane Trimmer 2013 	
+		  <i class="icon-twitter icon-large"></i> <a target="_blank" onclick="followpop(); return false;" href="https://twitter.com/janetrimmer">Follow Me!</a> <i class="icon-envelope icon-large"></i> <a href="mailto:jane@janetrimmer.co.uk">Email me!</a>
+		</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+  </body>
+</html>

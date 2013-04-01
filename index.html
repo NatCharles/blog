@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jane Trimmer homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jane Trimmer's blog">
+    <meta name="author" content="Jane Trimmer">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html"><i class="icon-home"></i> Jane Trimmer</a>
+          <div class="nav-collapse collapse">        
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="blog">Blog</a></li>
+			   <li><a href="drupal">Drupal tips</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="hero-unit">
+            <h1>Jane Trimmer</h1>
+			<aside>Older - Wiser - Drupalier</aside>
+			<img src="img/jane.jpg" height="118" width="90" alt="Jane Trimmer photo" />
+            <p>Hello. I'm Jane and I've been coding since before you were born. This blog is designed to be a useful resource for people who work in, or are just interested in, the wondeful world of web development.
+			</p>
+			<p>I am going to add short tips which have been useful to me. Very often instructions for doing something 'simple' will leave out a vital step.
+			</p>
+			<p>The world of web development is moving rapidly, especially with explosion in mobile devices. This blog will also be a testing ground to try out new methodologies and ways of displaying images. I shall add a photo gallery in due course.
+			</p>
+			<p><a href="about">About me</a> page contains details of my career and education, as well as personal bits.
+			</p>
+          </div><!--/hero-unit-->
+		  
+		  <div class="row-fluid">
+			<div class="span4">
+			  <h2>What I do</h2>
+			  <p>I am primarily a <a href="http://drupal.org/" title="Drupal homepage">Drupal</a> developer. However, I have the following skills:
+			  </p>	
+			  <ul>
+				<li>Responsive web design. This means ensuring that sites render properly on any device, whether desktop, laptop, tablet or smartphone.</li>
+				<li>HTML5 and CSS3</li>
+				<li>PHP</li>
+				<li>javascript and jQuery</li>
+			  </ul>  
+			</div><!--/span-->
+			
+			<div class="span4">
+			  <h2>Latest blog posts</h2>
+			  <p><strong>How I built this site</strong></p>
+			  <p><a class="btn" href="how-i-built-site">View details &raquo;</a></p>
+			</div><!--/span-->
+			
+			<div class="span4">
+			  <h2>Sites I've developed</h2>
+			  <p><strong>The Career Break Site</strong>. The UK's biggest career break website. Written in Drupal 7 and based on the Omega responsive theme <a href="http://www.thecareerbreaksite.com"> link here</a>.
+			   </p>
+			   <p><strong>The Fractal Investor</strong>. Innovative investment techniques. This was recently upgraded to Drupal 7 but is not yet responsive. <a href="http://thefractalinvestor.com"> link here</a>.
+			   </p>
+			   <p><strong>Growing Old Disgracefully</strong>. Older women's networking group. Drupal 6. This was designed to be managed by the ladies themselves.<a href="http://growingolddisgracefully.org.uk/"> link here</a>.
+			   </p>
+			   <p><strong>Manchester &amp; Warrington Quakers</strong> Local religious organisation. Drupal 6. The Quakers manage this site by themselves.<a href="http://thefractalinvestor.com"> link here</a>.
+			   </p>			   
+			   <p><strong>SugarCat Publishing</strong>. My company. HTML5 with a responsive design.<a href="http://sugarcat.co.uk"> link here</a>.
+			   </p>			  			  
+			</div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span--> 
+	  </div><!--/row-->
+      <hr>
+
+      <footer>
+        <p>&copy; Jane Trimmer 2013 	
+		  <i class="icon-twitter icon-large"></i> <a target="_blank" onclick="followpop(); return false;" href="https://twitter.com/janetrimmer">Follow Me!</a> <i class="icon-envelope icon-large"></i> <a href="mailto:jane@janetrimmer.co.uk">Email me!</a>
+		</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+	<script type="text/javascript">
+	  function followpop() {
+	  var followpopwin = window.open( "https://twitter.com/janetrimmer", "", "location=0,statusbar=0,menubar=0,width=900,height=550" );
+	  followpopwin.focus();
+	  }
+	</script>
+
+  </body>
+</html>
