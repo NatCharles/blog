@@ -103,8 +103,13 @@
 		 
 		  <p>I needed to make a minor change to css/bootstrap-responsive.css. On line 1007 or thereabouts, background-color: #f2f2f2; was replaced by background-color: #ab8483; The minified version of the file is only 5K smaller than the unminified version, so I did not bother to minify it again.
 		  </p>
-		  <p><i>Note:</i>If you are using the Chrome browser and have the Hootlet extension installed, you will see any words preceded by '@' and any numbers preceded by '#' as links. To fix this, right-click the Hootlet icon, select Options and toggle <strong>Link Twitter status and user profile handles into the HootSuite dashboard</strong> to <i>Off</i>. Thank you <a href="http://pagehalffull.wordpress.com/2012/11/28/how-the-hootsuite-hootlet-broke-my-browser-kindof/">Page 1/2 Full</a> for posting this workaround.
-		  </p>
+		  <p><i>Notes:</i></p>
+		  <ul>
+		    <li>If you are using the Chrome browser and have the Hootlet extension installed, you will see any words preceded by '@' and any numbers preceded by '#' as links. To fix this, right-click the Hootlet icon, select Options and toggle <strong>Link Twitter status and user profile handles into the HootSuite dashboard</strong> to <i>Off</i>. Thank you <a href="http://pagehalffull.wordpress.com/2012/11/28/how-the-hootsuite-hootlet-broke-my-browser-kindof/">Page 1/2 Full</a> for posting this workaround.
+			</li>
+			<li>For windows up to 979px wide, the navigation bar has the css attribute <i>position: static;</i>. This means that the bar disappears as you scroll down the page. For windows wider than 979px, the navigation bar has the css attribute <i>position: fixed;</i>. In this case, as you scroll down, the bar is still displayed at the top of the window. To compensate for this and to avoid the tops of pages from disappearing under the navigation bar, a media query was added to my custom css.
+			</li>			
+		  </ul>
 		  <p>All my customised css was put into one file - css/blog.css.
 		  </p>
 		  <p>I added a .htaccess file to enable friendly urls, ie. about.html is the same as about.

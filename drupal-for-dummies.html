@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Jane Trimmer | Drupal tips</title>
+    <title>Jane Trimmer | Drupal for dummies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jane Trimmer's collection of blog posts">
     <meta name="author" content="Jane Trimmer">
@@ -43,17 +43,15 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span12">
-          <h1>Drupal tips</h1>
+          <h1>Drupal for dummies</h1>
+		  <p>Many, many people support the Drupal community by contributing code, answering queries (often within hours) and writing tutorials. However, there are often gaps in explanations, leaving users floundering or frustrated. Assumptions are made about the level of competence of users. The following miscellaneous tips are for the less technically-minded.
+		  </p>
 		  <article>
-		    <h2><a href="drupal-for-dummies">Drupal for dummies</a></h2>
-			<p>Some tips for the less technically-orientated.</p>
+		    <h2>Hyphens in php code</h2>
+			<p>I recently created a Bulk Export module (tutorial coming shortly) which wouldn't load. I got a 500 - Internal Server Error when I tried to enable it. The reason? I had put hyphens in the module name, which generated hyphens in the .inc and .module files.PHP cannot parse hyphens. When I replaced all hyphens with underscores, everything was ok. The trouble is, there is no documentation about this.
+			</p>
 	      </article>
-		  
-		  <article>	  
-		    <h2><a href="disqus">Using Disqus for commenting</a></h2>
-		    <p>An alternative to Drupal's built-in commenting system.</p>
-		    <p class="text-info"><small>26 March 2013</small></p>
-		  </article>  	  
+		    
         </div><!--/span-->
       </div><!--/row-->
 
