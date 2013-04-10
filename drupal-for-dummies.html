@@ -51,6 +51,20 @@
 			<p>I recently created a Bulk Export module (tutorial coming shortly) which wouldn't load. I got a 500 - Internal Server Error when I tried to enable it. The reason? I had put hyphens in the module name, which generated hyphens in the .inc and .module files.PHP cannot parse hyphens. When I replaced all hyphens with underscores, everything was ok. The trouble is, there is no documentation about this.
 			</p>
 	      </article>
+		  
+		  <article>
+		    <h2>Useful debugging tools for module development</h2>
+			<ul class="unstyled">
+			  <li>drupal_set_message()
+			  </li>
+			  <li>dpm()
+			  </li>
+			  <li>kpr()
+			  </li>
+			  <li>and of course, the devel module</li>
+			</ul>
+			<p>These tips came from <a href="http://www.mediacurrent.com/resources/videos/what-do-when-things-go-wrong-drupal">this</a> video, about 27 min from start.</p>
+		  </article>
 		    
         </div><!--/span-->
       </div><!--/row-->
